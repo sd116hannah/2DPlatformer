@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 405772874}
   - component: {fileID: 405772873}
   - component: {fileID: 405772875}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -640,6 +640,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fc201d3b9874b1428e908fc7f060720, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerSpeed: 5
+  jumpHeight: 10
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
