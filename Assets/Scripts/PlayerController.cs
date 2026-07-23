@@ -1,5 +1,8 @@
+// SD116HannahF
+
 using System;
 using UnityEngine;
+using UnityEngine.InputSystem.Controls;
 
 public class PlayerController : MonoBehaviour
 {
@@ -7,8 +10,10 @@ public class PlayerController : MonoBehaviour
     private Collider2D _playerCollider;
 
     public float playerSpeed = 5f;
-    public float jumpHeight = 10f;
+    public float jumpHeight = 6f;
     private float _groundCheckDistance = 0.1f;
+    private int _currentJump = 0;
+    public int maxJumps = 3;
     private bool _isGrounded;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -34,11 +39,12 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetButtonDown("Jump"))
         {
-            if(_isGrounded == true)
+            _currentJump = _currentJump + 1;
+
+            if(_isGrounded == true || _currentJump < maxJumps)
             {
                 _rb.linearVelocity = new Vector2(_rb.linearVelocityX, jumpHeight);
             }
-
         }
     }
 
@@ -58,5 +64,10 @@ public class PlayerController : MonoBehaviour
         RaycastHit2D hitRight = Physics2D.Raycast(rightRayOrigin, Vector2.down, _groundCheckDistance, LayerMask.GetMask("Ground"));
 
         _isGrounded = hitLeft.collider != null || hitRight.collider != null; // if both feet aren't touching the ground, i am off the ground
+
+        if (_isGrounded == true)
+        {
+            _currentJump = 0;
+        }
     }
 }
