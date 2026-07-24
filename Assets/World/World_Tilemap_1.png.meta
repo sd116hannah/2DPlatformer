@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: ab9a35c83af6b9842b4f04d859f1e0d4
+guid: 637b3b8b0ae476647949716b27e3b01e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6474817916930609645
-    second: Punk_idle_0
-  - first:
-      213: 3800310597756625337
-    second: Punk_idle_1
-  - first:
-      213: 5867332370219042989
-    second: Punk_idle_2
-  - first:
-      213: 1194793324445235756
-    second: Punk_idle_3
+      213: -6158573667999738682
+    second: World_Tilemap_1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -84,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -109,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Punk_idle_0
+      name: World_Tilemap_1_0
       rect:
         serializedVersion: 2
-        x: 4
+        x: 0
         y: 0
-        width: 19
-        height: 35
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,74 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: de1dbf3279c2bd950800000000000000
-      internalID: 6474817916930609645
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Punk_idle_1
-      rect:
-        serializedVersion: 2
-        x: 52
-        y: 0
-        width: 19
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9b1af6f8a5a6db430800000000000000
-      internalID: 3800310597756625337
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Punk_idle_2
-      rect:
-        serializedVersion: 2
-        x: 99
-        y: 0
-        width: 20
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: da88e0a44b3fc6150800000000000000
-      internalID: 5867332370219042989
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Punk_idle_3
-      rect:
-        serializedVersion: 2
-        x: 147
-        y: 0
-        width: 20
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c2af093c232c49010800000000000000
-      internalID: 1194793324445235756
+      spriteID: 6c41dc3e0e9588aa0800000000000000
+      internalID: -6158573667999738682
       vertices: []
       indices: 
       edges: []
@@ -200,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 4cb1bf7c1f88d3944a23f3bd90cee3a9
     internalID: 0
     vertices: []
     indices: 
@@ -210,10 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Punk_idle_0: 6474817916930609645
-      Punk_idle_1: 3800310597756625337
-      Punk_idle_2: 5867332370219042989
-      Punk_idle_3: 1194793324445235756
+      World_Tilemap_1_0: -6158573667999738682
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
