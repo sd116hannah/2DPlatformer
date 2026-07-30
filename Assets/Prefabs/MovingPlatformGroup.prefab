@@ -104,9 +104,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2161296521941901526}
     m_Modifications:
+    - target: {fileID: 1202405661247239264, guid: 88f184b05644e8444af8e05cb4773cee, type: 3}
+      propertyPath: m_UseOneWay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1202405661247239264, guid: 88f184b05644e8444af8e05cb4773cee, type: 3}
+      propertyPath: m_SurfaceArc
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 1202405661247239264, guid: 88f184b05644e8444af8e05cb4773cee, type: 3}
+      propertyPath: m_RotationalOffset
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1297792325226358991, guid: 88f184b05644e8444af8e05cb4773cee, type: 3}
       propertyPath: m_Name
       value: MovingPlatform
+      objectReference: {fileID: 0}
+    - target: {fileID: 2310973875532551017, guid: 88f184b05644e8444af8e05cb4773cee, type: 3}
+      propertyPath: m_UsedByEffector
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4675725276837237713, guid: 88f184b05644e8444af8e05cb4773cee, type: 3}
       propertyPath: 'waypoints.Array.data[0]'
@@ -116,6 +132,10 @@ PrefabInstance:
       propertyPath: 'waypoints.Array.data[1]'
       value: 
       objectReference: {fileID: 8704057277737644475}
+    - target: {fileID: 7453108400643825973, guid: 88f184b05644e8444af8e05cb4773cee, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8341737610460597412, guid: 88f184b05644e8444af8e05cb4773cee, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.8840356

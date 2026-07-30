@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7fa23b4732df79649b8eca5102dd3b01
+guid: 0a999fd402f80174c8b1939cf8d168e5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3163254942568389391
-    second: World_Tilemap_4_0
+      213: -3181609865550756412
+    second: Sky_1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: World_Tilemap_4_0
+      name: Sky_1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1f4663ea36cd914d0800000000000000
-      internalID: -3163254942568389391
+      spriteID: 4c508f52fa6a8d3d0800000000000000
+      internalID: -3181609865550756412
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 4196135b34f6fcc44b54903131a98249
+    spriteID: 5b094e80fa190c14f8050459caad0cae
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      World_Tilemap_4_0: -3163254942568389391
+      Sky_1_0: -3181609865550756412
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
