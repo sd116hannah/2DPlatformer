@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
 {
     private Rigidbody2D _rb; // must include an underscore when adding a private variable in C#
     private Collider2D _playerCollider;
+    private SpriteRenderer _spriteRenderer;
 
     public float playerSpeed = 5f;
     public float jumpHeight = 6f;
@@ -21,6 +22,7 @@ public class PlayerController : MonoBehaviour
     {
         _rb = GetComponent<Rigidbody2D>();
         _playerCollider = GetComponent<Collider2D>();
+        _spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -52,6 +54,10 @@ public class PlayerController : MonoBehaviour
     {
         float moveInput = Input.GetAxis("Horizontal");
         _rb.linearVelocityX = playerSpeed * moveInput;
+        if (moveInput != 0)
+        {
+            _spriteRenderer.flipX = moveInput < 0;
+        }
     }
 
     private void CheckGrounded()
