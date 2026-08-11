@@ -6,6 +6,7 @@ public class Collectible : MonoBehaviour
     {
         if (collider.gameObject.tag == "Player")
         {
+            GameManager.Instance.AddScore();
             Destroy(gameObject);
         }
     }
