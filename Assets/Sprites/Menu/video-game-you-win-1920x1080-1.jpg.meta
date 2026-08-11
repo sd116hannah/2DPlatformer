@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e1138ef232360554f9de44d6fcd0e461
+guid: 0bc31c63e58874249a71b37f36f9bff9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -9208003963943820719
-    second: aa10b871-b2d6-4178-af80-1ecad0a01af9_0
+      213: 2196778769823150509
+    second: video-game-you-win-1920x1080-1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: aa10b871-b2d6-4178-af80-1ecad0a01af9_0
+      name: video-game-you-win-1920x1080-1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 1920
-        height: 885
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1526dbe4e29963080800000000000000
-      internalID: -9208003963943820719
+      spriteID: da1bd61f6a68c7e10800000000000000
+      internalID: 2196778769823150509
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      aa10b871-b2d6-4178-af80-1ecad0a01af9_0: -9208003963943820719
+      video-game-you-win-1920x1080-1_0: 2196778769823150509
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
