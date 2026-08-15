@@ -2,11 +2,12 @@
 
 using System;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.InputSystem.Controls;
 
 public class PlayerController : MonoBehaviour
 {
-    public AudioClip jumpSound;
+    public AudioSource jumpSource;
     
     private Rigidbody2D _rb; // must include an underscore when adding a private variable in C#
     private Collider2D _playerCollider;
@@ -49,9 +50,8 @@ public class PlayerController : MonoBehaviour
             {
                 _rb.linearVelocity = new Vector2(_rb.linearVelocityX, jumpHeight);
             }
-            SoundAPI.Instance.PlayOneShotSound(gameObject, jumpSound, 1.0f);
+            jumpSource.Play();
         }
-        
     }
 
     void HandleMovement()

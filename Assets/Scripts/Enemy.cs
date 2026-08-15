@@ -18,7 +18,7 @@ public class Enemy : MonoBehaviour
 
     private void DealDamageToPlayer(Collider2D playerCollider)
     {
-        Health playerHealth = playerCollider.GetComponent<Health>();
+        PlayerHealth playerHealth = playerCollider.GetComponent<PlayerHealth>();
         if (playerHealth != null)
         {
             playerHealth.TakeDamage(damageToPlayer);

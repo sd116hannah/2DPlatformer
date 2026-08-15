@@ -1,15 +1,24 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-
     public static GameManager Instance { get; private set; }
 
-    public int score = 0;
+    public GameObject player;
+    public GameObject enemyShooter;
+    public GameObject enemyPatroller;
+    public GameObject ambs;
+    public GameObject music;
+
+    public AudioClip winSound;
+
+    public GameObject winGroup;
 
     public TextMeshProUGUI scoreText;
+    public int score = 0;
 
     private void Awake()
     {
@@ -22,6 +31,8 @@ public class GameManager : MonoBehaviour
         Instance = this;
 
         DontDestroyOnLoad(gameObject);
+
+        winGroup.SetActive(false);
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -34,27 +45,33 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         scoreText.text = score.ToString();
-        if (score > 10) OpenSceneWon();
     }
 
     public void AddScore()
     {
         score++; // score = score + 1
-    }
 
-    public void OpenSceneLose()
-    {
-        SceneManager.LoadScene("GameOver");
-    }
+        if (score == 2)
+        {
+            MuteAudioMaster();
 
-    public void OpenSceneWon()
-    {
-        SceneManager.LoadScene("GameWon");
+            SoundAPI.Instance.PlayOneShotSound(player, winSound, 0.6f);
+
+            winGroup.SetActive(true);
+        }
     }
 
     public void LoadMainMenu()
     {
         SceneManager.LoadScene("MainMenu");
+    }
+
+    public void MuteAudioMaster()
+    {
+        Destroy(enemyShooter);
+        Destroy(enemyPatroller);
+        Destroy(ambs);
+        Destroy(music);
     }
 }
 
